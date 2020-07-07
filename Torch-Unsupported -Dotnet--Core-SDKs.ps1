@@ -7,8 +7,8 @@
         # Get all the dotnet core sdks installed in current machine
         $version = dotnet --list-sdks
         $version | ForEach-Object {
-        
-        # Skip supported versions
+        # Hardcoded array index value. Need to update.
+        # Skip supported versions 
         if(($_.Split("{ }")[0] -like $res[1].Version) -or ($_.Split("{ }")[0] -like $res[0].Version))
           {
                 Write-Host ("Keeping dotnet sdk " + $_.Split("{ }")[0]) -ForegroundColor Green
