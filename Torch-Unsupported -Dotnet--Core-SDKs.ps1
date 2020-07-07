@@ -1,4 +1,4 @@
-        #IMPORTANT: Pre-Requisite dotnet-core-uninstall tools
+        #IMPORTANT: Pre-Requisite dotnet-core-uninstall tool
 
         # Read supported dotnet core versions from config file
         $JSON = Get-Content -Raw -Path C:\Users\rananjai\Desktop\config.json | ConvertFrom-Json
